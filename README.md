@@ -5,6 +5,7 @@ The best way to use these notebooks is via google colab.
 # Bar Plot with annotation
 
 The notebook [bar_plot_with_annotation.ipynb](./bar_plot_with_annotation.ipynb) generates:
+
 ![img](./barplot.png)
 
 ## Details
@@ -16,6 +17,7 @@ In this case, the bars we want to annotate have indexes 4 and 5 starting at 0 on
 
 # Horizontal Bar Plot with datapoints
 The notebook [horizontal_bar_plot.ipynb](./horizontal_bar_plot.ipynb) generates:
+
 ![himg](./hbarplot.png)
 
 ## Details
