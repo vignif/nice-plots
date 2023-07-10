@@ -1,11 +1,39 @@
 # I Plot You
-A list of scripts that allows you to create awesome plots for your research. Annotations can be done automatically and the font of the labels and legend is compatible with ieee standards (no font 3)
+A list of scripts that allows you to create awesome plots for your research. Annotations can be done automatically and the font of the labels and legend is compatible with ieee standards (no font 3).
+The best way to use these notebooks is via google colab.
 
 # Bar Plot with annotation
+
+The notebook [bar_plot_with_annotation.ipynb](./bar_plot_with_annotation.ipynb) generates:
 ![img](./barplot.png)
 
-# Horizontal Bar Plot with annotation
+## Details
+Here you have 8 ``Patches`` objects, one per each drawed box. In order to use the annotation function you have to provide as argument to the function the initial and the final ``Patch``.
+In this case, the bars we want to annotate have indexes 4 and 5 starting at 0 on the left most one:
+
+``annotate_barplot_dataframe(4, 5, "*", patches, 1)``
+
+
+# Horizontal Bar Plot with datapoints
+The notebook [horizontal_bar_plot.ipynb](./horizontal_bar_plot.ipynb) generates:
 ![himg](./hbarplot.png)
+
+## Details
+Here, we use the library `seaborn` to overlay the datapoints to the horizontal bar plot.
+
+with:
+``
+sns.swarmplot(x="score", y="type", data=new_df,
+              size=5, color="1", linewidth=1, orient="h")
+``
+the datapoints will be stacked vertically, while with:
+
+``
+sns.stripplot(x="score", y="type", data=new_df,
+              # size=5, color="1", linewidth=1)
+``
+the datapoints will be clustered.
+
 
 ## Tips
 Avoid the No Font 3 error from paperplaza with
