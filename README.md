@@ -6,7 +6,7 @@ The best way to use these notebooks is via google colab.
 
 The notebook [bar_plot_with_annotation.ipynb](./bar_plot_with_annotation.ipynb) generates:
 
-![img](./barplot.png)
+![img](./img/barplot.png)
 
 ## Details
 Here you have 8 ``Patches`` objects, one per each drawed box. In order to use the annotation function you have to provide as argument to the function the initial and the final ``Patch``.
@@ -18,7 +18,7 @@ In this case, the bars we want to annotate have indexes 4 and 5 starting at 0 on
 # Horizontal Bar Plot with datapoints
 The notebook [horizontal_bar_plot.ipynb](./horizontal_bar_plot.ipynb) generates:
 
-![himg](./hbarplot.png)
+![himg](./img/hbarplot.png)
 
 ## Details
 Here, we use the library `seaborn` to overlay the datapoints to the horizontal bar plot.
@@ -40,7 +40,7 @@ the datapoints will be clustered.
 # Scattered frequency
 The notebook [scatter_frequency.ipynb](./scatter_frequency.ipynb) generates:
 
-![scatter](./scatter.png)
+![scatter](./img/scatter.png)
 
 Be aware that in the variable `s` should contain the occurences of the pair `x,y` in order to show appropriate results.
 
