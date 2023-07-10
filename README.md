@@ -1,9 +1,11 @@
 # I Plot You
 A list of scripts that allows you to create awesome plots for your research. Annotations can be done automatically and the font of the labels and legend is compatible with ieee standards (no font 3)
 
-# Bar Plot
-[img](./barplot.png)
+# Bar Plot with annotation
+![img](./barplot.png)
 
+# Horizontal Bar Plot with annotation
+![himg](./hbarplot.png)
 
 ## Tips
 Avoid the No Font 3 error from paperplaza with
