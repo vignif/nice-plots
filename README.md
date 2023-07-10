@@ -37,6 +37,13 @@ sns.stripplot(x="score", y="type", data=new_df,
 the datapoints will be clustered.
 
 
+# Scattered frequency
+The notebook [scatter_frequency.ipynb](./scatter_frequency.ipynb) generates:
+
+![scatter](./scatter.png)
+
+Be aware that in the variable `s` should contain the occurences of the pair `x,y` in order to show appropriate results.
+
 ## Tips
 Avoid the No Font 3 error from paperplaza with
 
