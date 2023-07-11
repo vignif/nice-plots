@@ -1,4 +1,6 @@
 # I Plot You
+### say bye bye to the crappy annotations for your significant differences! (spoiler: the little p-value-line-with-an-* can be done by matplotlib)
+
 A list of scripts that allows you to create awesome plots for your research. Annotations can be done automatically and the font of the labels and legend is compatible with ieee standards (no font 3).
 The best way to use these notebooks is via google colab.
 
