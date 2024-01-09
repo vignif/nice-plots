@@ -1,52 +1,58 @@
-# I Plot You
-### say bye bye to the crappy annotations for your significant differences! (spoiler: the little p-value-line-with-an-* can be done by matplotlib)
+# NicePlots
+```
+High-resolution plots for your research manuscript (sweet: the little p-value-line-with-an-* can be done by matplotlib)
+```
 
-A list of scripts that allows you to create awesome plots for your research. Annotations can be done automatically and the font of the labels and legend is compatible with ieee standards (no font 3).
-The best way to use these notebooks is via google colab.
+Here are some Jupiter Notebooks with python code I use for creating Hi-Res plots for my research. When reporting significant differences on plots, the usual approach is to modify the rasterred image manually (efficient but not the most elegant solution).
+Annotations can be added with matplotlib with compatible IEEE standard font (no font 3).
 
-# Bar Plot with annotation
+Here you can find:
+- Vertical barplot with horizontal bar for significant differences
+- Horizontal barplot with data points
+- Scattered plot in which the size of each circle tunable
+
+## Vertical Bar Plot with significant differences
 
 The notebook [bar_plot_with_annotation.ipynb](./bar_plot_with_annotation.ipynb) generates:
 
 ![img](./img/barplot.png)
 
-## Details
-Here you have 8 ``Patches`` objects, one per each drawed box. In order to use the annotation function you have to provide as argument to the function the initial and the final ``Patch``.
-In this case, the bars we want to annotate have indexes 4 and 5 starting at 0 on the left most one:
+### Details
+Here you have 8 ``Patches`` objects, one per each drawn box. To use the annotation function you have to provide as argument to the function the initial and the final ``Patch``.
+In this case, the bars we want to annotate have indexes 4 and 5 starting at 0 on the leftmost one:
 
 ``annotate_barplot_dataframe(4, 5, "*", patches, 1)``
 
 
-# Horizontal Bar Plot with datapoints
+## Horizontal Bar Plot with datapoints
 The notebook [horizontal_bar_plot.ipynb](./horizontal_bar_plot.ipynb) generates:
 
 ![himg](./img/hbarplot.png)
 
-## Details
-Here, we use the library `seaborn` to overlay the datapoints to the horizontal bar plot.
+### Details
+Here, we use the library `seaborn` to overlay the data points to the horizontal bar plot.
 
-with:
+Stack the points vertically with:
 ``
 sns.swarmplot(x="score", y="type", data=new_df,
               size=5, color="1", linewidth=1, orient="h")
 ``
-the datapoints will be stacked vertically, while with:
 
+Cluster the points automatically with:
 ``
 sns.stripplot(x="score", y="type", data=new_df,
               # size=5, color="1", linewidth=1)
 ``
-the datapoints will be clustered.
 
 
-# Scattered frequency
+## Scattered frequency
 The notebook [scatter_frequency.ipynb](./scatter_frequency.ipynb) generates:
 
 ![scatter](./img/scatter.png)
 
-Be aware that in the variable `s` should contain the occurences of the pair `x,y` in order to show appropriate results.
+Be aware that the variable `s` should contain the occurrences of the pair `x,y` to show appropriate results.
 
-## Tips
+### Tips
 Avoid the No Font 3 error from paperplaza with
 
 ```
@@ -55,8 +61,8 @@ mtp.rcParams['pdf.fonttype'] = 42
 ```
 
 ## Credits
-I have found the function for annotations, online some years ago. Is not mine but I adapted it to my needs.
-If you know the author, would love to acknowledge! 
+I found the function for annotations, online some years ago. Is not mine but I adapted it to my needs.
+If you know the author, would love to acknowledge it! 
 
 
 ```python
